@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9827e4b8-f3d5-4f35-bdef-efe3f05958db" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508529113.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508529646.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508529651.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508529800.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508529839.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508530375.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508530515.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508530576.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508530678.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508530746.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508530827.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508538201.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508538271.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508538633.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508538774.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508538845.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508538857.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508538878.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508538892.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508538924.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508538943.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508539018.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508539084.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508539104.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508539258.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508539337.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508539422.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508539594.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508539740.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508539779.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508539808.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508539933.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508539960.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508540015.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508540091.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508540112.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508540183.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508540198.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508540290.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508540312.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508540325.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508540360.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508540370.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508540385.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508540411.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508540427.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508540469.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508540489.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508541117.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508587211.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508587240.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508587284.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508587294.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508587317.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508587335.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508587488.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508587528.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508587619.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508587675.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508587699.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508587713.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508587735.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508588120.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508588174.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508712422.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508712484.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508713004.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508713021.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508713077.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508713621.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508713638.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508713663.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508713687.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508713706.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508713729.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508713832.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508713910.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508713947.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508714240.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508714263.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508714568.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508714617.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508715003.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508715048.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508715076.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508715091.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508715107.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508715149.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508715273.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508715303.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508715419.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508716571.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508716620.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508716737.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508716829.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508716967.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508717002.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508717041.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508717129.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508717181.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508717215.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508717302.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508717389.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508717502.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508717519.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508719246.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508719267.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508722045.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508722247.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508722331.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508722474.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508722556.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508723338.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508723408.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508723747.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508723787.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508723821.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508723913.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508724046.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508724081.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508724648.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508724809.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508724868.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508724933.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508724960.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508725005.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508725027.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508725157.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508725206.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508725298.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508725388.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508725462.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508725561.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508725595.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508725620.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508725897.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508725995.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508726372.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508726410.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508726451.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508727808.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508727850.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508728271.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508728297.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508728317.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508728332.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508728461.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508728566.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508728995.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508729064.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508729103.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508729155.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508729180.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508729261.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508729279.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508729327.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508729715.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/graph/events.out.tfevents.1508729730.lenovo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Phase_2/log.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../External codes/tagger/train.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../External codes/tagger/utils.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Phase_2/setup.py" afterPath="$PROJECT_DIR$/Phase_2/setup.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Phase_2/train.py" afterPath="$PROJECT_DIR$/Phase_2/train.py" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Code$mlp.coverage" NAME="mlp Coverage Results" MODIFIED="1508416183020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Code$setup.coverage" NAME="setup Coverage Results" MODIFIED="1508398227167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="setup.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Phase_2/setup.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3960">
+              <caret line="229" column="0" lean-forward="false" selection-start-line="229" selection-start-column="0" selection-end-line="229" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="train.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Phase_2/train.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="532">
+              <caret line="291" column="48" lean-forward="true" selection-start-line="291" selection-start-column="48" selection-end-line="291" selection-end-column="48" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="prepare_io.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Phase_2/prepare_io.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1368">
+              <caret line="78" column="33" lean-forward="false" selection-start-line="78" selection-start-column="33" selection-end-line="78" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="support.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Phase_2/support.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="900">
+              <caret line="54" column="8" lean-forward="false" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="parseData.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Phase_2/parseData.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>zeros</find>
+      <find>word_dim</find>
+      <find>pre_emb</find>
+      <find>cap_dim</find>
+      <find>output_size</find>
+      <find>no_of_classs</find>
+      <find>no_of_class</find>
+      <find>parameters</find>
+      <find>iob_</find>
+      <find>crea</find>
+      <find>word</find>
+      <find>mlp_model</find>
+      <find>word_mappin</find>
+      <find>print</find>
+      <find>id_to_tag[i]</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>no_of_classs</replace>
+      <replace>no_of_class</replace>
+      <replace>param</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Multilayer-Perceptron.ipynb" />
+        <option value="$PROJECT_DIR$/mlp.py" />
+        <option value="$PROJECT_DIR$/setup.py" />
+        <option value="$PROJECT_DIR$/parseData.py" />
+        <option value="$PROJECT_DIR$/utils.py" />
+        <option value="$PROJECT_DIR$/Phase_2/io_ne.py" />
+        <option value="$PROJECT_DIR$/Phase_2/support.py" />
+        <option value="$PROJECT_DIR$/Phase_2/setup.py" />
+        <option value="$PROJECT_DIR$/Phase_2/prepare_io.py" />
+        <option value="$PROJECT_DIR$/Phase_2/train.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1" />
+    <option name="y" value="-11" />
+    <option name="width" value="1922" />
+    <option name="height" value="1092" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="Phase_2" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.setup (1)">
+    <configuration name="mlp" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Code" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mlp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="setup (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Phase_2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Code" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Phase_2/setup.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="setup" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Code" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/setup.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="Python.setup" />
+      <item index="1" class="java.lang.String" itemvalue="Python.mlp" />
+      <item index="2" class="java.lang.String" itemvalue="Python.setup (1)" />
+    </list>
+    <recent_temporary>
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python.setup (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.mlp" />
+        <item index="2" class="java.lang.String" itemvalue="Python.setup" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9827e4b8-f3d5-4f35-bdef-efe3f05958db" name="Default" comment="" />
+      <created>1508227959971</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1508227959971</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1" y="-11" width="1922" height="1092" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0859375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17930327" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12602459" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924336" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="4" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Phase_2/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2088">
+          <caret line="124" column="38" lean-forward="false" selection-start-line="124" selection-start-column="38" selection-end-line="124" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phase_2/parseData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phase_2/support.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1332">
+          <caret line="78" column="5" lean-forward="true" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phase_2/prepare_io.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2898">
+          <caret line="163" column="6" lean-forward="false" selection-start-line="163" selection-start-column="6" selection-end-line="163" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py" />
+    <entry file="file://$PROJECT_DIR$/utils.py" />
+    <entry file="file://$PROJECT_DIR$/parseData.py" />
+    <entry file="file://$PROJECT_DIR$/evaluation/conlleval" />
+    <entry file="file://$PROJECT_DIR$/setup.py" />
+    <entry file="file://$PROJECT_DIR$/utils.py" />
+    <entry file="file://$PROJECT_DIR$/parseData.py" />
+    <entry file="file://$PROJECT_DIR$/setup.py" />
+    <entry file="file://$PROJECT_DIR$/utils.py" />
+    <entry file="file://$PROJECT_DIR$/parseData.py" />
+    <entry file="file://$PROJECT_DIR$/setup.py" />
+    <entry file="file://$PROJECT_DIR$/utils.py" />
+    <entry file="file://$PROJECT_DIR$/parseData.py" />
+    <entry file="file://$PROJECT_DIR$/setup.py" />
+    <entry file="file://$PROJECT_DIR$/parseData.py" />
+    <entry file="file://$PROJECT_DIR$/setup.py" />
+    <entry file="file://$PROJECT_DIR$/parseData.py" />
+    <entry file="file://$PROJECT_DIR$/parsingData.ipynb" />
+    <entry file="file://$PROJECT_DIR$/Multilayer-Perceptron.ipynb" />
+    <entry file="file://$PROJECT_DIR$/parseData.py" />
+    <entry file="file://$PROJECT_DIR$/setup.py" />
+    <entry file="file://$PROJECT_DIR$/setup.py" />
+    <entry file="file://$PROJECT_DIR$/utils.py" />
+    <entry file="file://$PROJECT_DIR$/parseData.py" />
+    <entry file="file://$PROJECT_DIR$/.ipynb_checkpoints/Multilayer-Perceptron (ADAM)-checkpoint.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py" />
+    <entry file="file://$PROJECT_DIR$/parseData.py" />
+    <entry file="file://$PROJECT_DIR$/setup.py" />
+    <entry file="file://$PROJECT_DIR$/parseData.py" />
+    <entry file="file://$PROJECT_DIR$/setup.py" />
+    <entry file="file://$PROJECT_DIR$/parseData.py" />
+    <entry file="file://$PROJECT_DIR$/parsingData.ipynb" />
+    <entry file="file://$PROJECT_DIR$/Multilayer-Perceptron.ipynb" />
+    <entry file="file://$PROJECT_DIR$/.ipynb_checkpoints/Multilayer-Perceptron (ADAM)-checkpoint.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.ipynb_checkpoints/Multilayer-Perceptron (SGD)-checkpoint.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils.py" />
+    <entry file="file://$PROJECT_DIR$/evaluation/conlleval" />
+    <entry file="file://$PROJECT_DIR$/parseData.py" />
+    <entry file="file://$PROJECT_DIR$/setup.py" />
+    <entry file="file://$PROJECT_DIR$/mlp.py" />
+    <entry file="file://$PROJECT_DIR$/Phase_2/parseData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phase_2/io.py" />
+    <entry file="file://$PROJECT_DIR$/Phase_2/io_ne.py" />
+    <entry file="file://$PROJECT_DIR$/Phase_2/support.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="54" column="8" lean-forward="false" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phase_2/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3960">
+          <caret line="229" column="0" lean-forward="false" selection-start-line="229" selection-start-column="0" selection-end-line="229" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phase_2/prepare_io.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1368">
+          <caret line="78" column="33" lean-forward="false" selection-start-line="78" selection-start-column="33" selection-end-line="78" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phase_2/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="291" column="48" lean-forward="true" selection-start-line="291" selection-start-column="48" selection-end-line="291" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

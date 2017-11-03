@@ -1,0 +1,50 @@
+import os
+import re
+import codecs
+import numpy as np
+import tensorflow as tf
+eval_path = "./evaluation"
+eval_script = os.path.join(eval_path, "conlleval")
+
+
+def num2optimizer(i):
+    if(i == 0):
+        return "SGD"
+    elif(i == 1):
+        return "Adadelta"
+    elif (i == 2):
+        return "Adagrad"
+    elif (i == 3):
+        return "AdagradDA"
+    elif (i == 4):
+        return "Momentum"
+    elif (i == 5):
+        return "Adam"
+    elif (i == 6):
+        return "ftrl"
+    elif (i == 7):
+        return "ProximalSGD"
+    elif (i == 8):
+        return "ProximalAdagrad"
+    elif (i == 9):
+        return "RMSProp"
+
+
+def get_batch_input(batch_no,train_X,train_Y,batch_size=100):
+    row_st = batch_no*batch_size
+    if( row_st > len(train_X) ):
+        return [],[]
+    return train_X[row_st:min(row_st+batch_size,len(train_X)+1)],train_Y[row_st:min(row_st+batch_size,len(train_Y)+1)]
+
+
+
+def one_hot_embedding(vector,one_hot_hash):
+    retVec = []
+    for idx,val in enumerate(vector):
+        tmp_one_hot = np.zeros(len(one_hot_hash))
+        if val in one_hot_hash:
+            tmp_one_hot[ one_hot_hash[val] ] = 1
+        else:
+            tmp_one_hot[ -1 ] = 1
+        retVec.append(tmp_one_hot)
+    return retVec
