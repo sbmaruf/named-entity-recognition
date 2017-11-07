@@ -213,7 +213,7 @@ def cap_feature(s):
     else:
         return 3
 
-def loademb(emb_param):
+def loademb(emb_param, embed_dim ):
     tic = time.time()
     Word2Vec={}
     itr = 0 ;
@@ -225,7 +225,7 @@ def loademb(emb_param):
         if( itr == 1 ):
             continue
         Word2Vec[line[0]] = []
-        for i in range(100):
+        for i in range(embed_dim):
             Word2Vec[line[0]].append(float(line[i+1]))
     toc = time.time()
     print("skip-gram vector loading time ", toc-tic , " (s)")

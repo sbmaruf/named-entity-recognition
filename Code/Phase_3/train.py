@@ -29,7 +29,7 @@ def train(param, train_data, vocab_data, dev_data,test_data,raw_data,words_info,
         embedding = tf.random_uniform([vocabulary_size, param['embed_dim']], -1.0, 1.0)
     else:
         Word2Vec = np.zeros((vocabulary_size,param['embed_dim']))
-        Word2Vec_ = loademb( param['init_emb'] )
+        Word2Vec_ = loademb( param['init_emb'], param['embed_dim'] )
         for k,v in dico_words.items():
             if( k not in Word2Vec_ ):
                 vector = np.random.normal(size=param['embed_dim'])
@@ -37,6 +37,7 @@ def train(param, train_data, vocab_data, dev_data,test_data,raw_data,words_info,
                 vector = Word2Vec_[k]
                 Word2Vec[ word_to_id[k] ] = vector
         embedding = Word2Vec
+
     tf.reset_default_graph()
     with tf.Graph().as_default():
         sess = tf.Session()
