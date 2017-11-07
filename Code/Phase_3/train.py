@@ -174,8 +174,8 @@ def train(param, train_data, vocab_data, dev_data,test_data,raw_data,words_info,
                                        param['folder'],
                                        "dev2.ckpt")
 
-                        print("\nBest dev score %.5f" % dev_score1)
-                        print("Best test score %.5f" % dev_score2)
+                        print("\nBest dev score %.5f" % best_dev1)
+                        print("Best test score %.5f" % best_dev2)
             result_report = os.path.join(param['folder'],"results")
             with codecs.open(result_report, 'a', 'utf8') as f:
                 f.write("Best dev score %.5f\n" % dev_score1)
