@@ -33,14 +33,33 @@ Build a full evaluation cycle with single layer MLP.
 + **[DONE]** Implement additional parameters for opt parser
 + **[DONE]** Implement the model with a model class.
 + **[DONE]** Tweak different hyperparameter 
-+ **[TODO]** Batch Normalization 
++ **[TODO]** Batch Normalization
++ **[DONE]** Save the model for later use. 
++ **[XXXX]** Implement tensorboard based visualization. 
 
-**Results :** Model is learning. Average f-measure : **testing ....** 
+## Phase 4
+
++ **[DONE]** Implement the bi-directional RNN model with same structure
++ **[DONE]** Implement additional parameters for opt parser
++ **[DONE]** Implement the model with a model class.
++ **[TODO]** Add character based rnn model with existing model
++ **[TODO]** Tweak different hyperparameter
++ **[TODO]** CRF Layer implementation
++ **[TODO]** Tensorboard based Visualization
+
+## Phase 5
+
++ **[TODO]** Combine the whole model. 
++ **[TODO]** Put the results in the Latex.
++ **[TODO]** Generate output using tensorboard.
++ **[TODO]** Save out optimized model for each cases.
 
 
 
-## Guide to use the Phase 3 model
- 
+## Guide to use the
+
+Each of the Phase contains a specific model. Check the description of the model to find your desired one.
+
 to run the model, 
 ```
 cd ./Code/Phase_3
