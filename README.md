@@ -41,7 +41,6 @@ Build a full evaluation cycle with single layer MLP.
 
 + **[DONE]** Implement the bi-directional RNN model with same structure
 + **[DONE]** Implement additional parameters for opt parser
-+ **[DONE]** Implement the model with a model class.
 + **[TODO]** Add character based rnn model with existing model
 + **[TODO]** Tweak different hyperparameter
 + **[TODO]** CRF Layer implementation
