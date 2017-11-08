@@ -39,8 +39,9 @@ Build a full evaluation cycle with single layer MLP.
 
 ## Phase 4
 
-+ **[DONE]** Implement the bi-directional RNN model with same structure
-+ **[DONE]** Implement additional parameters for opt parser
++ **[DONE]** Implement the bi-directional RNN model with an additional hidden layer.
++ **[DONE]** Implement additional parameters for opt parser.
++ **[DONE]** Evaluate the model.
 + **[TODO]** Add character based rnn model with existing model
 + **[TODO]** Tweak different hyperparameter
 + **[TODO]** CRF Layer implementation
@@ -51,7 +52,7 @@ Build a full evaluation cycle with single layer MLP.
 + **[TODO]** Combine the whole model. 
 + **[TODO]** Put the results in the Latex.
 + **[TODO]** Generate output using tensorboard.
-+ **[TODO]** Save out optimized model for each cases.
++ **[TODO]** Save optimized models for each cases and assign them as default parameter.
 
 
 
