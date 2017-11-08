@@ -1,5 +1,5 @@
 import os
-lr_rates = [.1 .5, .01, .001, .005]
+lr_rates = [.1, .5, .01, .001, .005]
 hidden_sizes = [100, 200, 500]
 dropouts = [.5,.75,.8]
 
