@@ -53,7 +53,7 @@ optparser.add_option(
     type='int', help="Learning method (SGD(0), Adadelta(1), Adagrad(2), AdagradDA(3), Momentum(4), Adam(5), ftrl(6), ProximalSGD(7), ProximalAdagrad(8), RMSProp(9) (Default: 0) (type: 'int')"
 )
 optparser.add_option(
-    "-l", "--lr_rate", default=.005,
+    "-l", "--lr_rate", default=.05,
     type='float', help="Learning rate (Default: .005) (type: 'float')"
 )
 optparser.add_option(
@@ -65,7 +65,7 @@ optparser.add_option(
     help="Number of hidden layer with number of hidden neurons. Ex : '100 200 300' for 3 layer of 100,200,300 neuron. Currently supported upto 1 layer. (Default: '100') (type: 'str')"
 )
 optparser.add_option(
-    "-E", "--epoch", default=100,
+    "-E", "--epoch", default=60,
     type='int', help="Number of training epoch. (Default: 100) (type: 'int')"
 )
 optparser.add_option(
@@ -77,7 +77,7 @@ optparser.add_option(
     type = 'int', help="Replace all digits by zero (Default: 1) (type: 'int')"
 )
 optparser.add_option(
-    "-d", "--dropout", default=.75,
+    "-d", "--dropout", default=.5,
     type='float', help="dropout rate [<float> (0-1)] (Default: .5) (type: 'float')"
 )
 optparser.add_option(
@@ -245,7 +245,7 @@ def parse_parameter():
     param['folder'] = address
     print_param(param)
 
-    result_report = os.path.join(param['folder'], "results" )
+    result_report = os.path.join( param['folder'], "results" )
     with codecs.open(result_report, 'w', 'utf8') as f:
         f.write("\n--- Printing the parameters ---")
         for k , v in param.items():
