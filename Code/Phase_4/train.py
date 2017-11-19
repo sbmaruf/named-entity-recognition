@@ -121,15 +121,7 @@ def train(param,
                     a,b = sess.run( [train_step, rnn.loss], feed_dict = feed_dict )
                     if( batch%50 == 0 and batch > 0 ):
                         print("Epoch:",itr+1,"batch:",batch,"loss:",b)
-                        train_score = evaluate_RNN(param,
-                                                   rnn,
-                                                   sess,
-                                                   train_sentences,
-                                                   train_data,
-                                                   id_to_tag,
-                                                   dico_tags,
-                                                   vocabulary_size, word_to_id,
-                                                   batch, eval_id, itr)
+
 
                     total_loss += b
                     tot_batch += 1
