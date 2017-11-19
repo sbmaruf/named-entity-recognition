@@ -92,11 +92,14 @@ def train(param,
             train_data = np.asarray(train_data)
             test_data = np.asarray(test_data)
             dev_data = np.asarray(dev_data)
-
+            train_sentences = np.asarray(train_sentences)
+            dev_sentences = np.asarray(dev_sentences)
+            test_sentences = np.asarray(test_sentences)
             saver = tf.train.Saver()
 
             for itr in range(epoch):
                 print("\nStarting epoch {0}...\n".format(itr + 1))
+                train_sentences, train_data = shuffle_in_unison(train_sentences,train_data)
                 genarators = get_minibatch(train_data, param['batch_size'])
                 tot_batch = 0
                 total_loss = 0
@@ -118,6 +121,16 @@ def train(param,
                     a,b = sess.run( [train_step, rnn.loss], feed_dict = feed_dict )
                     if( batch%50 == 0 and batch > 0 ):
                         print("Epoch:",itr+1,"batch:",batch,"loss:",b)
+                        train_score = evaluate_RNN(param,
+                                                   rnn,
+                                                   sess,
+                                                   train_sentences,
+                                                   train_data,
+                                                   id_to_tag,
+                                                   dico_tags,
+                                                   vocabulary_size, word_to_id,
+                                                   batch, eval_id, itr)
+
                     total_loss += b
                     tot_batch += 1
 
@@ -160,9 +173,11 @@ def train(param,
                                          vocabulary_size, word_to_id,
                                          batch, eval_id, itr)
 
+                print("Score on train: %.5f" % train_score)
                 print("Score on dev: %.5f" % dev_score)
                 print("Score on test: %.5f" % test_score)
                 if dev_score > best_dev:
+                    print("\nNew best score on dev.")
                     best_dev = dev_score
                     save_model(sess,
                                saver,
@@ -174,6 +189,7 @@ def train(param,
                     early_stop+=1
 
                 if test_score > best_test:
+                    print("\nNew best score on test.")
                     best_test = test_score
                     save_model(sess,
                                saver,

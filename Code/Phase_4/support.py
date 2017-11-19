@@ -211,7 +211,6 @@ def print_param(param):
 
 
 def save_model(sess, saver, param_folder, saved_ckpt):
-    print("\nNew best score on dev.")
     print("Saving model to disk...")
     address = os.path.join(param_folder, 'model')
     if(not os.path.isdir(address)):
@@ -246,3 +245,15 @@ def getOptimizer(learning_method,learning_rate):
     elif (learning_method == 9):
         optimizer = tf.train.RMSPropOptimizer(learning_rate = learning_rate)
     return optimizer
+
+
+
+def shuffle_in_unison(a, b):
+    assert len(a) == len(b)
+    shuffled_a = np.asarray(a)
+    shuffled_b = np.asarray(b)
+    permutation = np.random.permutation(len(a))
+    for old_index, new_index in enumerate(permutation):
+        shuffled_a[new_index] = a[old_index]
+        shuffled_b[new_index] = b[old_index]
+    return shuffled_a, shuffled_b
