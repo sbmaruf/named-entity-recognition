@@ -42,10 +42,10 @@ Build a full evaluation cycle with single layer MLP.
 + **[DONE]** Implement the bi-directional RNN model with an additional hidden layer.
 + **[DONE]** Implement additional parameters for opt parser.
 + **[DONE]** Evaluate the model.
-+ **[TODO]** Add character based rnn model with existing model
++ **[DONE]** Add character based rnn model with existing model
 + **[TODO]** Tweak different hyperparameter
-+ **[TODO]** CRF Layer implementation
-+ **[TODO]** Tensorboard based Visualization
++ **[DONE]** CRF Layer implementation
++ **[DONE]** Tensorboard based Visualization
 
 ## Phase 5
 

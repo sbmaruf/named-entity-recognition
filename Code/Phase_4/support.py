@@ -134,13 +134,38 @@ def word_mapping(sentences, lower):
     """
     words = [[x[0].lower() if lower else x[0] for x in s] for s in sentences]
     dico = create_dico(words)
-    dico['<UNK>'] = 10000000
-    dico[''] = 10000001
+    dico['<UNK>'] = 100000000
+    dico[''] = 100000001
     word_to_id, id_to_word = create_mapping(dico)
     print ("Found %i unique words (%i in total)" % (
         len(dico), sum(len(x) for x in words)
     ))
     return dico, word_to_id, id_to_word
+
+
+def char_mapping(sentences):
+    """
+    Create a dictionary and mapping of characters, sorted by frequency.
+    """
+    chars = ["".join([w[0] for w in s]) for s in sentences]
+    dico = create_dico(chars)
+    dico['<UNK>'] = 100000000
+    dico[''] = 100000001
+    char_to_id, id_to_char = create_mapping(dico)
+    print("Found %i unique characters" % len(dico))
+    return dico, char_to_id, id_to_char
+
+
+def tag_mapping(sentences):
+    """
+    Create a dictionary and a mapping of tags, sorted by frequency.
+    """
+    tags = [[word[-1] for word in s] for s in sentences]
+    dico = create_dico(tags)
+    tag_to_id, id_to_tag = create_mapping(dico)
+    print("Found %i unique named entity tags" % len(dico))
+    return dico, tag_to_id, id_to_tag
+
 
 
 def create_mapping(dico):
@@ -149,6 +174,7 @@ def create_mapping(dico):
     Items are ordered by decreasing frequency.
     """
     sorted_items = sorted(dico.items(), key=lambda x: (-x[1], x[0]))
+
     id_to_item = {i: v[0] for i, v in enumerate(sorted_items)}
     item_to_id = {v: k for k, v in id_to_item.items()}
     return item_to_id, id_to_item
@@ -156,7 +182,7 @@ def create_mapping(dico):
 
 def create_dico(item_list):
     """
-    Create a dictionary of items from a list of list of items.
+    Create a dictionary of items from a list of items.
     """
     assert type(item_list) is list
     dico = {}

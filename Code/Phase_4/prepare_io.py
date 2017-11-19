@@ -3,7 +3,8 @@ import re
 import time
 from support import *
 from collections import deque
-
+import numpy as np
+np.set_printoptions(threshold=np.nan)
 def zero_digits(s):
     """
     Replace every digit in a string by a zero.
@@ -157,43 +158,48 @@ def update_tag_scheme(sentences, tag_scheme):
             raise Exception('Unknown tagging scheme!')
 
 
-def prepare_dataset(sentences, word_to_id, tag_to_id, lower=False):
+def prepare_dataset(sentences, word_to_id, char_to_id, tag_to_id):
     """
     Prepare the dataset. Return a list of lists of dictionaries containing:
         - word indexes
         - word char indexes
         - tag indexes
     """
-    def f(x):
-        return x.lower() if lower else x
-
     data = []
+    itr = 0 ;
     for s in sentences:
         str_words = [w[0] for w in s]
-        words = [word_to_id[f(w) if f(w) in word_to_id else '<UNK>']
-                 for w in str_words]
-
-        caps = [cap_feature(w) for w in str_words]
+        k = []
+        for w in str_words:
+            if w in word_to_id:
+                k += [word_to_id[w]]
+            else:
+                k += [word_to_id['<UNK>']]
+        words = k
+        j = []
+        for w in str_words:
+            k = []
+            for c in w:
+                # print(c,"",end="")
+                #
+                if c in char_to_id:
+                        assert (char_to_id[c] <= 86)
+                        k += [char_to_id[c]]
+                else:
+                    assert (char_to_id['<UNK>'] <= 86)
+                    k += [char_to_id['<UNK>']]
+            j += [k]
+        chars = j
+        assert(len(words)==len(chars))
         tags = [tag_to_id[w[-1]] for w in s]
         data.append({
             'str_words': str_words,
             'words': words,
-            'caps': caps,
+            'chars': chars,
             'tags': tags,
         })
+
     return data
-
-
-def tag_mapping(sentences):
-    """
-    Create a dictionary and a mapping of tags, sorted by frequency.
-    """
-    tags = [[word[-1] for word in s] for s in sentences]
-    dico = create_dico(tags)
-    tag_to_id, id_to_tag = create_mapping(dico)
-    print("Found %i unique named entity tags" % len(dico))
-    return dico, tag_to_id, id_to_tag
-
 
 def cap_feature(s):
     """
@@ -213,7 +219,8 @@ def cap_feature(s):
     else:
         return 3
 
-def loademb(emb_param):
+def loademb(emb_param,embed_dim):
+    print("Loading pretrained model ... .. .")
     tic = time.time()
     Word2Vec={}
     itr = 0 ;
@@ -221,12 +228,12 @@ def loademb(emb_param):
     for line in codecs.open(address, 'r', 'utf8'):
         line = line.rstrip()
         line = line.split()
-        itr = itr+1
-        if( itr == 1 ):
+        if( len(line) !=  embed_dim+1 ):
             continue
-        Word2Vec[line[0]] = []
-        for i in range(100):
-            Word2Vec[line[0]].append(float(line[i+1]))
+        k = []
+        for i in range(embed_dim):
+            k.append(float(line[i+1]))
+        Word2Vec[line[0]] = k
     toc = time.time()
     print("skip-gram vector loading time ", toc-tic , " (s)")
     return Word2Vec
@@ -250,32 +257,63 @@ def prepare_input(data,vocabulary_size,no_of_class,isCaseSense):
     cur_cap = np.asarray(cur_cap)
     return cur_X,cur_Y,cur_cap
 
-def prepare_input_rnn(data,vocabulary_size,no_of_class,isCaseSense):
+def prepare_input_rnn(data):
+    # data :==: batch , array of dictionary
+    # each dictionary is for one sentence
+    # each dictionary contains
+    #   1. word_ids
+    #   2. sequence_lengths
+    #   3. char_ids
+    #   4. word_lengths
+    #   5. labels
+    word_ids = [ i['words'] for i in data ]
+    sequence_lengths = []
+    char_ids = [i['chars'] for i in data]
+    labels = [ i['tags'] for i in data]
 
-    cur_X = data['words']
-    cap_in = data['caps']
-    cur_Y = data['tags']
+    # calculate maximum length of the sentences and word.
+    # populate the sequence_lengths and word_lengths
+    max_sent_len = max_word_len = 0
+    for i, j in enumerate(word_ids):
+        # j is an list of word id, index i represents a sentence
+        temp = len(j)
+        max_sent_len = max( max_sent_len , temp )
+        sequence_lengths += [temp]
 
-    # cur_X = one_hot_embedding(cur_X, vocabulary_size)
-    cur_X = [cur_X]
-    cur_Y = [cur_Y]
+        for k in char_ids[i]:
+            # k is an list of character id
+            max_word_len = max(max_word_len,len(k))
 
-    cur_X = np.asarray(cur_X)
-    cur_Y = np.asarray(cur_Y)
+    char_ids_ret = np.zeros((len(word_ids), max_sent_len,max_word_len))
+    word_lengths = np.zeros((len(word_ids), max_sent_len))
 
-    cur_cap = []
-    for j in cap_in:
-        if (isCaseSense == 0):
-            j = 0
-        cur_cap.append([j])
-    cur_cap = np.asarray(cur_cap)
+    # padding word_ids and each element of char_ids
+    for i, j in enumerate(word_ids):
+        # j is an list of word id, index i represents a sentence
 
-    seq_len = []
-    for idx,val in enumerate(cur_X):
-        seq_len.append(val.size)
-    seq_len = np.asarray(seq_len)
+        temp = word_ids[i][:max_sent_len] + [0]* (max_sent_len-len(j))
+        word_ids[i] = temp
 
-    return cur_X,cur_Y,seq_len,cur_cap
+        temp = labels[i][:max_sent_len] + [0] * (max_sent_len - len(j))
+        labels[i] = temp
+
+        word_to_char = char_ids[i]
+
+        for k,_ in enumerate(word_to_char):
+            # _ is an list of character id representing a word
+            temp = word_to_char[k][:max_word_len] + [0] *(max_word_len - len(_))
+            word_lengths[i][k] = len(_)
+            char_ids_ret[i][k] = temp
+
+
+    word_ids = np.asarray(word_ids)
+    char_ids_ret = np.asarray(char_ids_ret)
+    sequence_lengths = np.asarray(sequence_lengths)
+    word_lengths = np.asarray(word_lengths)
+    labels = np.asarray(labels)
+
+    return word_ids, sequence_lengths, char_ids_ret, word_lengths, labels
+
 
 def prepare_input_CNN(data,vocabulary_size,no_of_class,isCaseSense,win_size,padding_idx):
 
@@ -328,3 +366,92 @@ def prepare_input_CNN(data,vocabulary_size,no_of_class,isCaseSense,win_size,padd
     cur_cap = np.asarray(cur_cap)
 
     return X,cur_Y,cur_cap
+
+
+def augment_with_pretrained(dictionary, ext_emb_path, words):
+    """
+    Augment the dictionary with words that have a pretrained embedding.
+    If `words` is None, we add every word that has a pretrained embedding
+    to the dictionary, otherwise, we only add the words that are given by
+    `words` (typically the words in the development and test sets.)
+    """
+    print('Loading pretrained embeddings from %s...',ext_emb_path)
+    assert os.path.isfile(ext_emb_path)
+
+    # Load pretrained embeddings from file
+    pretrained = set([
+        line.rstrip().split()[0].strip()
+        for line in codecs.open(ext_emb_path, 'r', 'utf-8')
+        if len(ext_emb_path) > 0
+    ])
+
+    # We either add every word in the pretrained file,
+    # or only words given in the `words` list to which
+    # we can assign a pretrained embedding
+    if words is None:
+        for word in pretrained:
+            if word not in dictionary:
+                dictionary[word] = 0
+    else:
+        for word in words:
+            if any(x in pretrained for x in [
+                word,
+                word.lower(),
+                re.sub('\d', '0', word.lower())
+            ]) and word not in dictionary:
+                dictionary[word] = 0
+
+    word_to_id, id_to_word = create_mapping(dictionary)
+    return dictionary, word_to_id, id_to_word
+
+
+
+
+def get_embeddings(param, vocabulary_size, no_of_class, dico_words, word_to_id):
+    cnt1 = cnt2 = cnt3 = cnt4 = 0
+    if( len(param['init_emb']) <= 2 ):
+        #vector initialize by xavier initializer
+        Word2Vec = tf.get_variable(shape=[vocabulary_size, param['embed_dim']], initializer=tf.contrib.layers.xavier_initializer())
+        # embedding = tf.random_uniform([vocabulary_size, param['embed_dim']], -1.0, 1.0)
+        print("embedding vector size : ",Word2Vec.get_shape())
+    else:
+        #vector initialized by pretrained embedding
+        Word2Vec = np.zeros((vocabulary_size,param['embed_dim']))
+        Word2Vec_ = loademb( param['init_emb'],param['embed_dim'] )
+        for k,v in dico_words.items():
+            if( k in Word2Vec_):
+                vector = Word2Vec_[k]
+                Word2Vec[ word_to_id[k] ] = vector
+                cnt1 += 1 ;
+            elif( k.lower() in Word2Vec_ ):
+                vector = Word2Vec_[ k.lower() ]
+                Word2Vec[ word_to_id[ k ] ] = vector
+                cnt2 += 1 ;
+            elif( re.sub('\d', '0', k.lower()) in Word2Vec_ ):
+                vector = Word2Vec_[ re.sub('\d', '0', k.lower()) ]
+                Word2Vec[ word_to_id[ k ] ] = vector
+                cnt3 += 1
+            else:
+                # vector = np.random.normal(size=param['embed_dim'])
+                vector = np.zeros(param['embed_dim'])
+                Word2Vec[ word_to_id[k] ] = vector
+                cnt4 += 1
+
+        print("embedding vector size : ",Word2Vec.shape)
+    print("vector initialized by preemb", cnt1)
+    print("vector initialized lowering cnaracter", cnt2)
+    print("vector initialized substituting digits", cnt3)
+    print("vector initialized by zero replacing", cnt4)
+    print("Percent of vector initialized ", (cnt1+cnt2+cnt3)*100/(cnt1+cnt2+cnt3+cnt4))
+    return Word2Vec
+
+
+def get_minibatch(data,batch_size):
+    batch = []
+    for k in data:
+        if( len(batch) == batch_size ):
+            yield batch
+            batch = []
+        batch.append(k)
+    if( len(batch) > 0 ):
+        yield batch
