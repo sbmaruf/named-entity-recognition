@@ -182,11 +182,9 @@ def prepare_dataset(sentences, word_to_id, char_to_id, tag_to_id):
             for c in w:
                 # print(c,"",end="")
                 #
-                if c in char_to_id:
-                        assert (char_to_id[c] <= 86)
+                if c in char_to_id:       
                         k += [char_to_id[c]]
                 else:
-                    assert (char_to_id['<UNK>'] <= 86)
                     k += [char_to_id['<UNK>']]
             j += [k]
         chars = j
