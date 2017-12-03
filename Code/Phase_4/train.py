@@ -134,7 +134,7 @@ def train(param,
                     }
                     a,b = sess.run( [train_step, rnn.loss], feed_dict = feed_dict )
                     if( batch%50 == 0 and batch > 0 ):
-                    	print("Epoch:",itr+1,"batch:",batch,"loss:",b)
+                        print("Epoch:",itr+1,"batch:",batch,"loss:",b)
 
                     total_loss += b
                     tot_batch += 1
@@ -212,8 +212,8 @@ def train(param,
                 f.write("Best dev score %.5f\n" % best_dev)
                 f.write("Best test score %.5f\n" % best_test)
                 f.write("Test score on best_dev %.5f\n" % test_on_best_dev)
-                f.write("\n\n\n tensorflow seed value %i" % tensor_flow_seed)
-                f.write("generator seed list : " + str(rand_seed_lst) )
+                f.write("\n\n\n tensorflow seed value %i\n" % tensor_flow_seed)
+                f.write("generator seed list : " + str(rand_seed_lst) + "\n" )
 
     writer = tf.summary.FileWriter('./graph_log', graph=my_graph)
     writer.close()

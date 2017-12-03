@@ -42,7 +42,7 @@ optparser.add_option(
     help="Test set location. Multiple location supported, separated by space (Default: './../../Data/eng.testb') (type : 'str')"
 )
 optparser.add_option(
-    "-e", "--embed_dim", default=100,
+    "-e", "--embed_dim", default=64,
     type='int', help="Token embedding dimension (Default: 100 'int') (type : 'int')"
 )
 optparser.add_option(
@@ -268,8 +268,8 @@ def preprocess( param ):
     dico_words_train = dico_words
 
     # Create a dictionary and a mapping for words / POS tags / tags
-    dico_chars, char_to_id, id_to_char = char_mapping(train_sentences)
-    dico_tags, tag_to_id, id_to_tag = tag_mapping(train_sentences)
+    dico_chars, char_to_id, id_to_char = char_mapping(vocab_sentences)
+    dico_tags, tag_to_id, id_to_tag = tag_mapping(vocab_sentences)
 
     raw_data = [train_sentences, vocab_sentences, dev_sentences, test_sentences]
     words_info = [dico_words, word_to_id, id_to_word]
