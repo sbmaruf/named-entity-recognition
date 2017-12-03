@@ -26,19 +26,19 @@ prevDir = os.path.dirname(prevDir)
 """
 optparser = optparse.OptionParser()
 optparser.add_option(
-    "-T", "--train", default="./../../Data/eng.train",
+    "-T", "--train", default="./../../Data/esp.train",
     help="Train set location. Multiple location supported, separated by space. (default: './../../Data/eng.train') (type : 'str')"
 )
 optparser.add_option(
-    "-v", "--vocab", default="./../../Data/eng.train ./../../Data/eng.testa ./../../Data/eng.testb",
+    "-v", "--vocab", default="./../../Data/esp.train ./../../Data/esp.testa ./../../Data/esp.testb",
     help="Vocabulary set location. Multiple location supported, separated by space. (default: './../../Data/eng.train') (type : 'str')"
 )
 optparser.add_option(
-    "-D", "--dev", default="./../../Data/eng.testa",
+    "-D", "--dev", default="./../../Data/esp.testa",
     help="Dev set location. Multiple location supported, separated by space. (default: './../../Data/eng.testa') (type : 'str')"
 )
 optparser.add_option(
-    "-t", "--test", default="./../../Data/eng.testb",
+    "-t", "--test", default="./../../Data/esp.testb",
     help="Test set location. Multiple location supported, separated by space (Default: './../../Data/eng.testb') (type : 'str')"
 )
 optparser.add_option(
@@ -46,7 +46,7 @@ optparser.add_option(
     type='int', help="Token embedding dimension (Default: 100 'int') (type : 'int')"
 )
 optparser.add_option(
-    "-i", "--init_emb", default="./../../Data/sskip.100.vectors",
+    "-i", "--init_emb", default="./../../Data/ES64",
     type='str', help="Location of pretrained embeddings. For random initializer use empty string. (Default: './../../Data/sskip.100.vectors') (type: 'str')"
 )
 optparser.add_option(

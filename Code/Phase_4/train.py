@@ -2,11 +2,16 @@ import tensorflow as tf
 import numpy as np
 import os
 import codecs
+import random
+from random import shuffle
 from prepare_io import *
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 from cnn_model import *
 from evaluate import *
 from rnn_model import *
+
+tensor_flow_seed = 100
+tf.set_random_seed(tensor_flow_seed)
 
 def train(param,
           train_data,
@@ -96,10 +101,19 @@ def train(param,
             dev_sentences = np.asarray(dev_sentences)
             test_sentences = np.asarray(test_sentences)
             saver = tf.train.Saver()
+            
+            rand_seed_lst = []
+            for i in range(epoch):
+                rand_seed_lst.append(i)
 
             for itr in range(epoch):
                 print("\nStarting epoch {0}...\n".format(itr + 1))
-                train_sentences, train_data = shuffle_in_unison(train_sentences,train_data)
+				                
+                random.seed(rand_seed_lst[itr])
+                shuffle(train_data)
+                random.seed(rand_seed_lst[itr])
+                shuffle(train_sentences)
+                
                 genarators = get_minibatch(train_data, param['batch_size'])
                 tot_batch = 0
                 total_loss = 0
@@ -120,8 +134,7 @@ def train(param,
                     }
                     a,b = sess.run( [train_step, rnn.loss], feed_dict = feed_dict )
                     if( batch%50 == 0 and batch > 0 ):
-                        print("Epoch:",itr+1,"batch:",batch,"loss:",b)
-
+                    	print("Epoch:",itr+1,"batch:",batch,"loss:",b)
 
                     total_loss += b
                     tot_batch += 1
@@ -129,11 +142,11 @@ def train(param,
 
                 result_report = os.path.join(param['folder'], "results")
                 with codecs.open(result_report, 'a', 'utf8') as f:
-                    f.write("Average loss after epoch {0} : {1}".format(itr,total_loss/tot_batch))
+                    f.write("Average loss after epoch {0} : {1}\n".format(itr,total_loss/tot_batch))
 
                 print("Average loss after epoch {0} : {1}".format(itr,total_loss/tot_batch))
 
-                lr_rate = lr_rate * lr_decay
+                lr_rate = max(lr_rate * lr_decay,.0000001)
                 eval_id += 1
                 train_score = evaluate_RNN(param,
                                          rnn,
@@ -197,8 +210,10 @@ def train(param,
             result_report = os.path.join(param['folder'],"results")
             with codecs.open(result_report, 'a', 'utf8') as f:
                 f.write("Best dev score %.5f\n" % best_dev)
-                f.write("Best test score %.5f" % best_test)
-                f.write("Test score on best_dev %.5f" % test_on_best_dev)
+                f.write("Best test score %.5f\n" % best_test)
+                f.write("Test score on best_dev %.5f\n" % test_on_best_dev)
+                f.write("\n\n\n tensorflow seed value %i" % tensor_flow_seed)
+                f.write("generator seed list : " + str(rand_seed_lst) )
 
     writer = tf.summary.FileWriter('./graph_log', graph=my_graph)
     writer.close()
